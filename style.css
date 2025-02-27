@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff5945, #4e085f);
+    padding: 10px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img {
+    width: 30px;
+    margin-right: 10px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 12px 8px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    color: #555;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all linear 10ms;
+}
+ul li span:hover {
+    color: #fff;
+    background: #ff5945;
+}
+select {
+    position: absolute;
+    right: 3rem;
+    top: 5px;
+    width: fit-content;
+    height: 42px;
+    font-size: 16px;
+    text-align: center;
+    appearance: none;
+	padding: 8px;
+	background-color: #FFFFFF;
+	border: 0px solid #D5E3FF;
+	border-radius: 8px;
+	color: #000000;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0px 0px 4px 0px #E2E2E2;
+}
